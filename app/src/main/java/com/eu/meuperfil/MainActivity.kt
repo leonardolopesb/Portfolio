@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         //Tirando a cor roxa da parte superior do app
-        window.statusBarColor = Color.BLACK
+        window.statusBarColor = Color.parseColor("#80232323")
 
         //Inflando o layout padrão de tela
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -36,6 +36,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnClicar.setOnClickListener{
             openGalleryForImage()
+        }
+
+        binding.btnPortfolio.setOnClickListener{
+            navegarHome()
         }
     }
 
@@ -51,5 +55,11 @@ class MainActivity : AppCompatActivity() {
             selectedImageUri = data.data!!
             binding.imgPerfil.setImageURI(selectedImageUri)
         }
+    }
+
+    private fun navegarHome(){
+        val intent = Intent(this, Home::class.java)
+
+        startActivity(intent)
     }
 }
