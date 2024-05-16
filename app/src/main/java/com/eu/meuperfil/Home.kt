@@ -1,5 +1,6 @@
 package com.eu.meuperfil
 
+import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -26,6 +27,15 @@ class Home : AppCompatActivity() {
         window.statusBarColor = Color.parseColor("#232323")
 
         supportActionBar?.hide()
+
+        val imagePath = intent.getStringExtra("imagePath")
+        if (imagePath != null) {
+            // Load the image from the passed path
+            val imageView = binding.imgPerfil  // Replace with your image view ID in the layout
+
+            val bitmap = BitmapFactory.decodeFile(imagePath)
+            imageView.setImageBitmap(bitmap)
+        }
 
         val recyclerViewLista = binding.RecyclerViewLista
 

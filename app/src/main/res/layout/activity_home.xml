@@ -25,6 +25,14 @@
                     android:textStyle="bold"
                     />
 
+                <ImageView
+                    android:id="@+id/imgPerfil"
+                    android:layout_width="match_parent"
+                    android:layout_margin="16dp"
+                    android:layout_height="320dp"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/eu" />
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/RecyclerViewLista"
                     android:layout_width="match_parent"

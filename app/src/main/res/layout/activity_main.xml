@@ -25,8 +25,7 @@
         android:id="@+id/imgPerfil"
         android:layout_width="match_parent"
         android:layout_margin="16dp"
-        android:layout_height="320dp"
-        app:srcCompat="@drawable/eu" />
+        android:layout_height="320dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -47,18 +46,18 @@
         android:fontFamily="@font/poppins"
         android:backgroundTint="@android:color/white"
         android:layout_gravity="center"
-        android:layout_marginTop="48dp"/>
+        android:layout_marginTop="16dp"/>
 
     <Button
         android:id="@+id/btnClicar"
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
-        android:text="Alterar imagem de perfil"
+        android:text="Insira uma imagem de perfil"
         android:textColor="@color/white"
         android:textSize="12sp"
         android:fontFamily="@font/poppins"
-        android:backgroundTint="@android:color/transparent"
+        android:backgroundTint="#20808080"
         android:layout_gravity="center"
-        android:layout_marginTop="32dp"/>
+        android:layout_marginTop="48dp"/>
 
 </LinearLayout>
