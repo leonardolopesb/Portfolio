@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.eu.meuperfil.databinding.ListaItemBinding
 import com.eu.meuperfil.model.Lista
 
-class AdapterLista (private val context: Context, private val RecyclerViewLista: MutableList<Lista>):
+class AdapterLista(private val context: Context, private val RecyclerViewLista: MutableList<Lista>):
     RecyclerView.Adapter<AdapterLista.ListaViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListaViewHolder {
